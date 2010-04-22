@@ -28,4 +28,5 @@ gem 'mongrel'
 # end
 
 gem "meatloaf-core", :path => "meatloaf-core", :require => ["meatloaf_core", "meatloaf_core/engine"]
+gem "meatloaf-more", :path => "meatloaf-more", :require => ["meatloaf_more", "meatloaf_more/engine"]
 
