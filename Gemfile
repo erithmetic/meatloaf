@@ -25,8 +25,10 @@ gem 'mongrel'
 # gem 'rspec', :group => :test
 # group :test do
 #   gem 'webrat'
-# end
-
+# end                    
 gem "meatloaf-core", :path => "meatloaf-core", :require => ["meatloaf_core", "meatloaf_core/engine"]
-gem "meatloaf-more", :path => "meatloaf-more", :require => ["meatloaf_more", "meatloaf_more/engine"]
+
+group :extensions do
+  gem "meatloaf-more", :path => "meatloaf-more", :require => ["meatloaf_more", "meatloaf_more/engine"]
+end
 

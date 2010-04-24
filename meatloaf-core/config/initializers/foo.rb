@@ -1,1 +1,1 @@
-puts ">>>>>>> initializing meatloaf-core"
+#puts ">>>>>>> initializing meatloaf-core"
