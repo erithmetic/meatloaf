@@ -1,2 +1,2 @@
-class <%= class_name %
+class <%= class_name %>
 end

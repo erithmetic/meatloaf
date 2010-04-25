@@ -15,7 +15,8 @@ module Meatloaf
         template "LICENSE", "#{file_name}/LICENSE"
         template "Rakefile", "#{file_name}/Rakefile"
         template "README.md", "#{file_name}/README.md"
-        template ".gitignore", "#{file_name}/.gitignore"
+        template ".gitignore", "#{file_name}/.gitignore"                
+        template "extension.gemspec.tt", "#{file_name}/#{file_name.dasherize}.gemspec"                
       end      
 
       def create_app_dirs                   
@@ -31,12 +32,16 @@ module Meatloaf
         directory "config", "#{file_name}/config"
         empty_directory extension_dir('config/initializers')
       end
-      
+                       
       def create_lib_files                   
         empty_directory extension_dir("lib/tasks")
         template 'extension/engine.rb.tt', "#{file_name}/lib/#{file_name}/engine.rb"
         template 'extension/extension.rb.tt', "#{file_name}/lib/#{file_name}.rb"                  
       end            
+
+      def update_gemfile
+        gem file_name.dasherize, :path => file_name, :require => [file_name, "#{file_name}/engine"], :group => "extensions"
+      end
 
       protected                       
       

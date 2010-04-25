@@ -1,8 +1,8 @@
 begin
   require "jeweler"
   Jeweler::Tasks.new do |gem|
-    gem.name = "<%=file_name.dasherize %>"
-    gem.summary = "<%=class_name %> Extension for Meatloaf"
+    gem.name = "meatloaf-ultra"
+    gem.summary = "MeatloafUltra Extension for Meatloaf"
     gem.files = Dir["{lib}/**/*", "{app}/**/*", "{config}/**/*"]
     # other fields that would normally go in your gemspec
     # like authors, email and has_rdoc can also be included here

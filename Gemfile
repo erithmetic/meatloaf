@@ -30,5 +30,6 @@ gem "meatloaf-core", :path => "meatloaf-core", :require => ["meatloaf_core", "me
 
 group :extensions do
   gem "meatloaf-more", :path => "meatloaf-more", :require => ["meatloaf_more", "meatloaf_more/engine"]
-end
+end 
 
+gem "meatloaf-ultra", :require => ["meatloaf_ultra", "meatloaf_ultra/engine"], :path => "meatloaf_ultra", :group => "extensions"
