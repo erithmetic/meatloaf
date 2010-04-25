@@ -1,0 +1,12 @@
+#require "meatloaf"
+require "<%=file_name %>"
+require "rails"   
+
+module <%=class_name%>
+  class Engine < Rails::Engine   
+    #engine_name :<%=file_name%>
+    
+    #initializer "<%=file_name %>.configure_rails_initialization" do |app|
+    #end     
+  end
+end
